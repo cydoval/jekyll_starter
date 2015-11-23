@@ -15,3 +15,8 @@ header {
         width: 20%;
     }
 }
+main {
+	.main_contents {
+		@include container;
+	}
+}

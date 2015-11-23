@@ -23,4 +23,7 @@
         opacity: .85;
         color: #fff;
     }
+    &.darken_primary {
+        background-color:darken($primary-color,25)
+    }
 }

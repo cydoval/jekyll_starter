@@ -70,6 +70,12 @@ header {
   header .rocket_logo {
     width: 20%; }
 
+main .main_contents {
+  max-width: 1200px;
+  width: 80%;
+  margin: 0 auto;
+  min-width: 300px; }
+
 body {
   padding: 0px;
   margin: 0px;
@@ -302,6 +308,8 @@ input[type="button"].button-primary:focus {
   .btn:hover {
     opacity: .85;
     color: #fff; }
+  .btn.darken_primary {
+    background-color: #681f0f; }
 
 .nav_wrapper {
   max-width: 1200px;
