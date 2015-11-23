@@ -1,0 +1,17 @@
+header {
+    border-top: 3px solid $primary-color;
+    border-bottom: 1px solid $borders;
+    height: auto;
+    padding-top:1.5%;
+    padding-bottom:0.5%;
+    .header_contents {
+        @include container;
+        .site_logo {
+            width: 30%;
+            display: inline-block;
+        }
+    }
+    .rocket_logo {
+        width: 20%;
+    }
+}

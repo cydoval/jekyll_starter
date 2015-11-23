@@ -1,40 +1,42 @@
 .nav_wrapper {
-    // background-color: blue;
+    @include container;
 }
+
 #nav {
-    width: 65%;
-    position: absolute;
-    top:20px;
-    left:30%;
+    // width: 65%;
+    // position: absolute;
+    // top:20px;
+    // left:30%;
     // background-color:orange;
     ul {
         list-style-type: none;
     }
 }
+
 #nav li {
     position: relative;
     a {
-        color: #fff;
         font-family: $sans-serif;
-        font-size:1.6rem;
+        font-size: 1.4rem;
         display: block;
-        color:$secondary-font;
+        color: $secondary-font;
         &:hover {
-            color:green;
+            color: green;
         }
         // &:active {
         //     background-color: #c00 !important;
         // }
     }
 }
-
 /* first level */
+
 header {
     // border-bottom:4rem solid blue;
 }
+
 #nav > {
     a {
-        display:none;
+        display: none;
     }
     ul {
         // height: 3.5em;
@@ -44,21 +46,22 @@ header {
             // width: 25%;
             // height: 100%;
             // float: left;
-            display:inline-block;
-            margin-right:5%;
+            display: inline-block;
+            margin-right: 5%;
             &:last-child {
-                margin-right:0px;
+                margin-right: 0px;
             }
             // &:first-child {
             //     padding-left:10px;
             // }
             > a {
                 line-height: 2.5em;
-                text-align:left;
+                text-align: left;
             }
         }
     }
 }
+
 #nav > ul > li > a {
     // border-right: 1px solid darken(blue,4);
     // &:after {
@@ -66,27 +69,27 @@ header {
     //     font-size: 20px;
     // }
 }
+
 #nav > ul > li:first-child > a {
     // border-left: 1px solid darken(blue,4);
 }
+
 #nav > ul > li:hover > a,
 #nav > ul:not(:hover) > li.active > a {
     // background-color: darken(blue,4);
 }
-
-
 /* second level */
 
 #nav li ul {
     // background-color: darken(blue,4);
-    background-color: lighten(blue,8);
+    background-color: lighten(blue, 8);
     display: none;
     position: absolute;
     top: 100%;
     a {
-        color:#fff;
+        color: #fff;
         &:hover {
-            color:#fff;
+            color: #fff;
         }
     }
 }
@@ -96,36 +99,37 @@ header {
     left: 0;
     right: 0;
 }
+
 #nav li:not(:first-child):hover ul {
     left: -1px;
 }
+
 #nav li ul a {
     font-size: 1.4rem;
     /* 20 */
-    border-top: 1px solid darken(blue,1);
+    border-top: 1px solid darken(blue, 1);
     padding: 0.75em;
     /* 15 (20) */
 }
 
 #nav li ul li a:hover,
 #nav li ul:not(:hover) li.active a {
-    background-color: lighten(blue,5);
+    background-color: lighten(blue, 5);
 }
 
-
-@media all and (max-width: 1250px) { 
+@media all and (max-width: 1250px) {
     #nav {
-        left:28%;
         li {
             a {
-                font-size:1.5rem;
+                font-size: 1.4rem;
             }
         }
     }
     #nav > ul > li {
-        margin-right:3%;
+        margin-right: 3%;
     }
 }
+
 @media only screen and ( max-width: 1000px)
 /* 1000 */
 
@@ -134,32 +138,33 @@ header {
         width: 100%;
         position: static;
         margin: 0;
-        text-align:center;
+        text-align: center;
     }
     #nav > ul > li {
-        margin-right:5%;
+        margin-right: 5%;
     }
     .search_form {
-        top:168px;
+        top: 168px;
     }
 }
+
 @media only screen and ( max-width: 640px)
 /* 640 */
 
 {
     .search_form {
-        right:-39%;
-        top:30px;
+        right: -39%;
+        top: 30px;
         input {
-            width:100px !important;
+            width: 100px !important;
         }
     }
     #nav {
         position: relative;
         top: auto;
         left: auto;
-        text-align:left;
-        width:70%;
+        text-align: left;
+        width: 70%;
     }
     // button
     #nav > a {
@@ -202,7 +207,7 @@ header {
     #nav > ul > li {
         width: 100%;
         float: none;
-        background-color:#fff;
+        background-color: #fff;
     }
     #nav > ul > li > a {
         height: auto;
@@ -210,8 +215,7 @@ header {
         padding: 0 0.833em;
         /* 20 (24) */
     }
-    #nav > ul > li:not(:last-child) > a {
-            }
+    #nav > ul > li:not(:last-child) > a {}
     /* second level */
     #nav li ul {
         position: static;

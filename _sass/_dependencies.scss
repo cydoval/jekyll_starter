@@ -4,8 +4,8 @@
 
 // pretty colors 
 
-    $primary-color:   #0C95AD;
-    $secondary-color: #BF5012; 
+    $primary-color:   rgb(215,65,32);
+    $secondary-color: complement($primary-color); 
 
     $primary-font:      #333433; // p,li color in main content
     $secondary-font:    #5a585c; // p,li color in portlet/sidebar

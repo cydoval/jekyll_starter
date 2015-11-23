@@ -27,10 +27,8 @@ p {
   font-size: 1.6rem;
   font-family: "ff-tisa-web-pro", Georgia, serif;
   color: #333433; }
-  header p {
-    font-size: 1.4rem;
-    color: white;
-    font-family: "fira-sans", arial, sans-serif; }
+  .banner p {
+    color: #fff; }
 
 h1, h2, h3, h4, h5, h6 {
   color: #333433;
@@ -49,18 +47,28 @@ header h1, header .h1 {
 
 h2, .h2 {
   font-size: 2.4rem; }
-  header h2, header .h2 {
-    font-size: 1.6rem;
-    color: #444B58;
-    display: inline-block;
-    margin-bottom: 6px; }
+  .banner h2, .banner .h2 {
+    color: #fff; }
 
 h3, .h3 {
   font-size: 2rem; }
-  .right_col h3, .right_col .h3 {
-    font-size: 1.6rem;
-    text-transform: uppercase;
-    margin-top: 0px; }
+
+header {
+  border-top: 3px solid #d74120;
+  border-bottom: 1px solid #C8C7CC;
+  height: auto;
+  padding-top: 1.5%;
+  padding-bottom: 0.5%; }
+  header .header_contents {
+    max-width: 1200px;
+    width: 80%;
+    margin: 0 auto;
+    min-width: 300px; }
+    header .header_contents .site_logo {
+      width: 30%;
+      display: inline-block; }
+  header .rocket_logo {
+    width: 20%; }
 
 body {
   padding: 0px;
@@ -269,18 +277,19 @@ input[type="button"].button-primary:focus {
   display: table;
   clear: both; }
 
-header {
-  background-color: #434343;
-  height: auto;
-  padding: 7% 0 1% 0;
-  background: url(/media/scotland.jpg) no-repeat 100%;
-  text-align: center; }
-  header img {
-    margin-top: 100px; }
+.banner {
+  background-color: #d74120;
+  padding: 2% 0; }
+  .banner .banner_contents {
+    max-width: 1200px;
+    width: 80%;
+    margin: 0 auto;
+    min-width: 300px; }
 
 .btn {
   padding: 14px 30px 12px;
   margin-top: 2.5%;
+  background-color: #20b6d7;
   box-shadow: 0px -3px 0px rgba(0, 0, 0, 0.15) inset;
   border-radius: 2px;
   font-family: "fira-sans", arial, sans-serif;
@@ -294,20 +303,20 @@ header {
     opacity: .85;
     color: #fff; }
 
-#nav {
-  width: 65%;
-  position: absolute;
-  top: 20px;
-  left: 30%; }
-  #nav ul {
-    list-style-type: none; }
+.nav_wrapper {
+  max-width: 1200px;
+  width: 80%;
+  margin: 0 auto;
+  min-width: 300px; }
+
+#nav ul {
+  list-style-type: none; }
 
 #nav li {
   position: relative; }
   #nav li a {
-    color: #fff;
     font-family: "fira-sans", arial, sans-serif;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     display: block;
     color: #5a585c; }
     #nav li a:hover {
@@ -358,10 +367,8 @@ header {
   background-color: #1a1aff; }
 
 @media all and (max-width: 1250px) {
-  #nav {
-    left: 28%; }
-    #nav li a {
-      font-size: 1.5rem; }
+  #nav li a {
+    font-size: 1.4rem; }
 
   #nav > ul > li {
     margin-right: 3%; } }
