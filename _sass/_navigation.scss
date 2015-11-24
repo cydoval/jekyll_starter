@@ -21,7 +21,7 @@
         display: block;
         color: $secondary-font;
         &:hover {
-            color: green;
+            color: $primary-color;
         }
         // &:active {
         //     background-color: #c00 !important;
@@ -82,14 +82,14 @@ header {
 
 #nav li ul {
     // background-color: darken(blue,4);
-    background-color: lighten(blue, 8);
+    // background-color: lighten(blue, 8);
     display: none;
     position: absolute;
     top: 100%;
     a {
-        color: #fff;
+        color: $secondary-font;
         &:hover {
-            color: #fff;
+            color: $primary-color;
         }
     }
 }
@@ -107,14 +107,13 @@ header {
 #nav li ul a {
     font-size: 1.4rem;
     /* 20 */
-    border-top: 1px solid darken(blue, 1);
+    // border-top: 1px solid darken(blue, 1);
     padding: 0.75em;
     /* 15 (20) */
 }
 
 #nav li ul li a:hover,
 #nav li ul:not(:hover) li.active a {
-    background-color: lighten(blue, 5);
 }
 
 @media all and (max-width: 1250px) {
@@ -223,4 +222,32 @@ header {
         /* 20 */
         padding-top: 0;
     }
+}
+.arrow_box {
+    position: relative;
+    background: #fff;
+    border: 1px solid #c7c8c0;
+}
+.arrow_box:after, .arrow_box:before {
+    bottom: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+
+.arrow_box:after {
+    border-color: rgba(255, 255, 255, 0);
+    border-bottom-color: #fff;
+    border-width: 5px;
+    margin-left: -5px;
+}
+.arrow_box:before {
+    border-color: rgba(199, 200, 192, 0);
+    border-bottom-color: #c7c8c0;
+    border-width: 6px;
+    margin-left: -6px;
 }
