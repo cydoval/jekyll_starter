@@ -387,28 +387,17 @@ input[type="button"].button-primary:focus {
   .search_form {
     top: 168px; } }
 @media only screen and (max-width: 640px) {
-  .search_form {
-    right: -39%;
-    top: 30px; }
-    .search_form input {
-      width: 100px !important; }
-
-  #nav {
-    position: relative;
-    top: auto;
-    left: auto;
-    text-align: left;
-    width: 70%; }
-
   #nav > a {
-    width: 3.125em;
+    width: 4.5em;
     /* 50 */
-    height: 3.125em;
+    height: 4.5em;
     /* 50 */
     text-align: left;
     text-indent: -9999px;
-    background-color: blue;
-    position: relative; }
+    background-color: #222222;
+    position: relative;
+    border-radius: 2px;
+    margin: 1% 0; }
 
   #nav > a:before,
   #nav > a:after {
@@ -429,10 +418,7 @@ input[type="button"].button-primary:focus {
   /* first level */
   #nav > ul {
     height: auto;
-    display: none;
-    position: absolute;
-    left: 0;
-    right: 0; }
+    display: none; }
 
   #nav:target > ul {
     display: block; }
@@ -446,6 +432,9 @@ input[type="button"].button-primary:focus {
     height: auto;
     text-align: left;
     padding: 0 0.833em;
+    font-size: 1.6rem;
+    padding-top: 1%;
+    padding-bottom: 1%;
     /* 20 (24) */ }
 
   /* second level */
