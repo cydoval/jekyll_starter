@@ -1,4 +1,7 @@
 @charset "UTF-8";
+@font-face {
+  font-family: 'MyWebFont';
+  src: url("fonts/klinic_light.woff") format("woff"), url("fonts/klinic_light.ttf") format("truetype"); }
 html {
   font-size: 10px;
   -webkit-font-smoothing: antialiased;
@@ -24,6 +27,22 @@ ul, ol {
   ul.no-bullet li, ol.no-bullet li {
     list-style-type: none; }
 
+ul.footer-list {
+  list-style-type: none;
+  padding-left: 0px;
+  margin-bottom: 0px;
+  display: inline-block; }
+  ul.footer-list li {
+    display: inline-block;
+    border-right: 1px solid rgba(215, 65, 32, 0.5);
+    padding-right: 10px;
+    margin-right: 10px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px; }
+    ul.footer-list li:last-child {
+      border-right: none; }
+
 p {
   line-height: 1.625;
   letter-spacing: .025rem;
@@ -35,20 +54,14 @@ p {
 
 h1, h2, h3, h4, h5, h6 {
   color: #333433;
-  font-family: "fira-sans", arial, sans-serif;
+  font-family: "klinic_light", arial, sans-serif;
   margin-top: 1rem;
   margin-bottom: 1rem;
   line-height: 1.5;
-  font-family: "fira-sans", arial, sans-serif; }
+  font-family: "klinic_light", arial, sans-serif; }
 
 h1, .h1 {
   font-size: 2.8rem; }
-  header h1, header .h1 {
-    color: #fff;
-    font-size: 4.0rem;
-    border-bottom: 2px solid white;
-    display: inline;
-    padding: 0 20px 5px 20px; }
   h1.document_header, .h1.document_header {
     margin-bottom: 5px;
     font-weight: 400;
@@ -59,7 +72,8 @@ h2, .h2 {
   font-weight: 400;
   color: #5a585c; }
   .banner h2, .banner .h2 {
-    color: #fff; }
+    color: #fff;
+    font-family: 'MyWebFont'; }
   h2.document_description, .h2.document_description {
     padding-bottom: 8px;
     margin-bottom: 8px;
@@ -112,6 +126,17 @@ article {
   vertical-align: top;
   margin-left: 1%;
   padding-left: 1%; }
+
+footer .footer_contents {
+  max-width: 1200px;
+  width: 80%;
+  margin: 0 auto;
+  min-width: 300px;
+  margin-top: 7%; }
+  footer .footer_contents .foot_top {
+    border-bottom: 1px solid rgba(215, 65, 32, 0.5);
+    padding-bottom: 8px;
+    margin-bottom: 8px; }
 
 body {
   padding: 0px;
@@ -334,7 +359,7 @@ input[type="button"].button-primary:focus {
   background-color: #20b6d7;
   box-shadow: 0px -3px 0px rgba(0, 0, 0, 0.15) inset;
   border-radius: 2px;
-  font-family: "fira-sans", arial, sans-serif;
+  font-family: "klinic_light", arial, sans-serif;
   font-size: 1.4rem;
   font-weight: 400;
   color: #fff;
@@ -346,6 +371,9 @@ input[type="button"].button-primary:focus {
     color: #fff; }
   .btn.darken_primary {
     background-color: #681f0f; }
+
+.float-right {
+  float: right; }
 
 .nav_wrapper {
   background-color: #f7f7f7;
@@ -366,7 +394,7 @@ nav {
 #nav li {
   position: relative; }
   #nav li a {
-    font-family: "fira-sans", arial, sans-serif;
+    font-family: "klinic_light", arial, sans-serif;
     font-size: 1.4rem;
     text-transform: uppercase;
     font-weight: 600;

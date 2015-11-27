@@ -1,6 +1,13 @@
+//
+@font-face {
+  font-family: 'MyWebFont';
+  src:
+       url('fonts/klinic_light.woff') format('woff'), /* Pretty Modern Browsers */
+       url('fonts/klinic_light.ttf')  format('truetype'), /* Safari, Android, iOS */
+}
 
 // fonts
-    $sans-serif:        "fira-sans",arial, sans-serif;
+    $sans-serif:        "klinic_light",arial, sans-serif;
     $serif:             "ff-tisa-web-pro",Georgia, serif;
 
 // pretty colors 
