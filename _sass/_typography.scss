@@ -96,7 +96,7 @@ h2, .h2 {
 	color:$secondary-font;
 	.banner & {
 		color:#fff;
-		font-family: 'MyWebFont';
+		font-family: $sans-serif;
 	}
 	&.document_description {
 		padding-bottom:8px;
