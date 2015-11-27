@@ -1,7 +1,4 @@
 @charset "UTF-8";
-@font-face {
-  font-family: 'MyWebFont';
-  src: url("fonts/klinic_light.woff") format("woff"), url("fonts/klinic_light.ttf") format("truetype"); }
 html {
   font-size: 10px;
   -webkit-font-smoothing: antialiased;
